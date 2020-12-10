@@ -1,0 +1,8 @@
+[build]
+  command   = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+  package = "./local_plugins/log_functions"
