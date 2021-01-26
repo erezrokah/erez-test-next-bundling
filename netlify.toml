@@ -5,4 +5,4 @@
 
 
 [dev]
-  command = "npm run next:dev"
+  framework = "#static"
