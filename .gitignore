@@ -36,3 +36,6 @@ yarn-error.log*
 .netlify
 
 functions
+
+out_publish
+out_functions

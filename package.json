@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "clean": "rimraf .next out functions",
-    "build": "run-s clean next:build",
     "next:dev": "next dev",
-    "next:build": "next build",
+    "build": "run-s clean next:build:*",
+    "next:build:next": "next build",
     "next:start": "next start",
+    "next:build:non": "next-on-netlify",
     "ntl": "netlify"
   },
   "dependencies": {
     "next": "10.0.3",
+    "next-on-netlify": "https://github.com/netlify/next-on-netlify#ll/image-fxn-url",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
