@@ -3,20 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "clean": "rimraf .next out functions",
-    "build": "run-s clean next:build",
-    "next:dev": "next dev",
-    "next:build": "next build",
-    "next:start": "next start",
-    "ntl": "netlify"
+    "build": "run-s build:*",
+    "build:clean": "rimraf .next out functions",
+    "build:next": "next build",
+    "build:non": "next-on-netlify",
+    "start": "next start"
   },
   "dependencies": {
     "next": "10.0.3",
+    "next-on-netlify": "^2.8.6",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^1.0.2",
+    "concurrently": "^5.3.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2"
   }
