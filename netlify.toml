@@ -4,5 +4,9 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+  
+[[plugins]]
+  package = "netlify-plugin-epsagon"
+  
 [[plugins]]
   package = "./local_plugins/log_functions"
