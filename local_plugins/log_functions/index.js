@@ -5,6 +5,10 @@ module.exports = {
       run: { command },
     },
   }) {
-    await command(`ls -lh ${constants.FUNCTIONS_DIST}`);
+    try {
+      await command(`ls -lh ${constants.FUNCTIONS_DIST}`);
+    } catch (error) {
+      console.log(error.message);
+    }
   },
 };
