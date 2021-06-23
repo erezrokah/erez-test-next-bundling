@@ -3,4 +3,5 @@ command = "npm run build"
 publish = "out"
 
 [functions]
+external_node_modules = ["next", "@ampproject/toolbox-optimizer"]
 node_bundler = "esbuild"
